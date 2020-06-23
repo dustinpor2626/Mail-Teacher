@@ -28,13 +28,13 @@ if(isset($_POST['timeline']))
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'sourya069@gmail.com';                 // SMTP username
-    $mail->Password = 'sourav@123';                           // SMTP password
+    $mail->Username = 'Youremail@gmail.com';                 // SMTP username
+    $mail->Password = 'your_password';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;  
                 
                 $mail->setFrom($email);
-                $mail->addAddress('souravsingh2626@gmail.com');
+                $mail->addAddress('Your_faculty_mail');
                 
                 
                 $mail->isHTML(true);
